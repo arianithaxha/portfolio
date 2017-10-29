@@ -1,0 +1,47 @@
+@font-face {
+	font-family: Roboto;
+	src: url(roboto.ttf);
+}	
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "fun work" "about projects";
+	width: 100vw;
+	height: 100vh;
+	font-family: Roboto; 
+	font-weight: medium;
+	text-align: center;
+	font-size: 22px;
+}
+
+.fun{
+	grid-area: fun;
+}
+
+.work{
+	grid-area: work;
+}
+
+.about{
+	grid-area: about;
+}
+
+.projects {
+	grid-area: projects;
+}
+
+.grid div:nth-child(even) {
+	background-color: white;
+}
+
+.grid div:nth-child(odd) {
+	background-color: white;
+}
